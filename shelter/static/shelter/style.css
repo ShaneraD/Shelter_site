@@ -1,0 +1,54 @@
+body {
+    background-color: #f6f8f7;
+    font-family: Arial, sans-serif;
+    color: #2e2e2e;
+    margin: 20px;
+}
+
+h1 {
+    color: #1f2a44; 
+}
+
+h2 {
+    color: #276749;
+}
+
+a {
+    text-decoration: none;
+    background-color: #48bb78;
+    color: white;
+    padding: 8px 12px;
+    margin-right: 5px;
+    border-radius: 5px;
+}
+
+a:hover {
+    background-color: #38a169;
+}
+
+.showcase {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 20px 0;
+}
+
+.pet-card {
+    text-align: center;
+}
+
+.pet-card p {
+    margin-top: 8px;
+    font-weight: bold;
+    color: #276749;
+}
+
+/* Prevent link button styling from covering content */
+.pet-card a {
+    background: none;
+    padding: 0;
+}
+
+h1 {
+    color: navy !important;
+}

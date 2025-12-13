@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>IVY Animal Shelter</title>
+    <link rel="stylesheet" href="{% static 'shelter/style.css' %}">
+</head>
+<body>
+
+<h1>Welcome to IVY Animal Shelter!</h1>
+
+<p>
+    <strong>Contact us:</strong> 888-123-5678<br>
+    <strong>Located:</strong> 111 Pur Bark Way, Indianapolis, Indiana 46202
+</p>
+
+<hr>
+
+{% block content %}
+{% endblock %}
+
+<hr>
+
+<!-- FOOTER -->
+<p style="margin-top: 40px;">
+    <a href="/login/">Employee Login</a>
+</p>
+
+
+
+</body>
+</html>

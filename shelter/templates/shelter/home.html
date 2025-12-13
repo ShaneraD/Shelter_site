@@ -1,0 +1,24 @@
+{% extends 'shelter/base.html' %}
+{% load static %}
+
+{% block content %}
+<h2>Our FUR-tastic Showcase!</h2>
+
+<div class="showcase">
+    <div class="pet-card">
+        <a href="/dogs/">
+            <img src="{% static 'shelter/dog.jpg' %}" alt="Dogs" width="150">
+        </a>
+        <p>Dogs</p>
+    </div>
+
+    <div class="pet-card">
+        <a href="/cats/">
+            <img src="{% static 'shelter/cat.jpg' %}" alt="Cats" width="150">
+        </a>
+        <p>Cats</p>
+    </div>
+</div>
+
+<p>Adopt today and give a loving animal a forever home.</p>
+{% endblock %}
