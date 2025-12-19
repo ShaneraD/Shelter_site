@@ -1,0 +1,40 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Employee Dashboard</title>
+    <link rel="stylesheet" href="{% static 'shelter/style.css' %}">
+</head>
+<body class="dashboard-body">
+
+<div class="dashboard-container">
+
+    <!-- Top bar -->
+    <div class="dashboard-header">
+        <span>Employee ID: ######</span>
+        <a href="{% url 'home' %}" class="logout-btn">Logout</a>
+    </div>
+
+    <!-- Main content -->
+    <div class="dashboard-content">
+
+        <!-- Intake box -->
+        <div class="intake-box">
+            <h2>Intake</h2>
+            <div class="paw">🐾 🐾</div>
+        </div>
+
+        <!-- Right buttons -->
+        <div class="dashboard-actions">
+            <a href="#" class="dash-btn">Adoptable Animals</a>
+            <a href="#" class="dash-btn">All Animals</a>
+            <a href="{% url 'home' %}" class="home-link">Home page</a>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

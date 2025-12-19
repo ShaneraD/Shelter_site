@@ -1,0 +1,66 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Intake Form</title>
+    <link rel="stylesheet" href="{% static 'shelter/style.css' %}">
+</head>
+<body class="dashboard-body">
+
+<div class="intake-wrapper">
+
+    <div class="intake-title">Intake form</div>
+
+    <form method="post">
+        {% csrf_token %}
+
+        <!-- Top section -->
+        <div class="intake-grid">
+
+            <label>Intake date</label>
+            <input type="date" name="intake_date">
+
+            <label>Name</label>
+            <input type="text" name="name">
+
+            <div class="radio-group">
+                <div>
+                    <label>Cat</label><br>
+                    <input type="radio" name="species" value="Cat">
+                </div>
+                <div>
+                    <label>Dog</label><br>
+                    <input type="radio" name="species" value="Dog">
+                </div>
+            </div>
+
+            <label>Age</label>
+            <input type="number" name="age">
+
+        </div>
+
+        <!-- Adoption status -->
+        <div class="status-section">
+            <div class="status-title">Adoption Status</div>
+
+            <div class="radio-group status-options">
+                <div>
+                    <label>Adopted</label><br>
+                    <input type="radio" name="status" value="Adopted">
+                </div>
+                <div>
+                    <label>Available</label><br>
+                    <input type="radio" name="status" value="Available">
+                </div>
+            </div>
+        </div>
+
+        <button type="submit" class="submit-btn">Submit</button>
+
+    </form>
+
+</div>
+
+</body>
+</html>
