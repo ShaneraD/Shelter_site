@@ -14,17 +14,41 @@ A simple desktop app for an animal shelter to:
 
 ## Project Structure
 
-After running the app once, your folder will look like this:
-IVY_Animal_Shelter_App/
-   - app.py
-   - data/
-       - pets.json
-       - users.json
-       - exports/
-           - pets_export.json
-   - website_upload/
-       - pets.json
-   - app_run.bat
+After running the app and website, your folder will look like this:
+
+- app.py  
+- run_app.bat  
+
+- data/  
+  - pets.json  
+  - users.json  
+  - exports/  
+    - pets_export.json  
+
+- website_upload/  
+  - pets.json  
+
+- shelter/  
+  - views.py  
+  - urls.py  
+  - templates/  
+    - shelter/  
+      - base.html  
+      - home.html  
+      - animals.html  
+      - employee_login.html  
+      - employee_dashboard.html  
+      - intake_form.html  
+  - static/  
+    - shelter/  
+      - dog.jpg  
+      - cat.jpg  
+      - style.css  
+
+- shelter_site/  
+- manage.py  
+- venv/  
+
 
 ## Requirements
 
@@ -33,7 +57,7 @@ IVY_Animal_Shelter_App/
 
 ## How to use the app
 
-- Open app_run.bat
+- Open app_run.bat 
 - Login using the provided admin credentials
 - enter pet information
 - Select any of the options below to save to .json.
@@ -42,3 +66,15 @@ IVY_Animal_Shelter_App/
 - This app also features a simple identity management system for end users (staff)
 
 ## Website
+-Activate virtual enviroment 
+- Run python manage.py runserver
+- Open browser and go to http://127.0.0.1:8000/
+  
+  ## Website Behavior
+- The desktop app manages all pet data
+- The website does not edit pets
+- The website reads from website_upload/pets.json
+-Dogs and Cats are displayed separately based on species
+-Updating pet data requires re-uploading JSON from the desktop app
+
+
