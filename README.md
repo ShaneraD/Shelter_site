@@ -1,4 +1,4 @@
-# IVY Animal Shelter - Inventory Manager (Using Tkinter)
+# IVY Animal Shelter - Inventory Manager
 
 A simple desktop app for an animal shelter to:
 - Log in with a username/password
