@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import json
 import hashlib
 import secrets
@@ -820,7 +819,7 @@ class IvyAnimalShelterApp(tk.Tk):
 
 if __name__ == "__main__":
     IvyAnimalShelterApp().mainloop()
-=======
+
 import json
 import hashlib
 import secrets
@@ -1642,4 +1641,4 @@ class IvyAnimalShelterApp(tk.Tk):
 
 if __name__ == "__main__":
     IvyAnimalShelterApp().mainloop()
->>>>>>> 10bab7d85d76e9b1071747dc093b4733c6355911
+
