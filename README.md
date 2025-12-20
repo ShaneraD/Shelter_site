@@ -74,7 +74,8 @@ After running the app and website, your folder will look like this:
 - The desktop app manages all pet data
 - The website does not edit pets
 - The website reads from website_upload/pets.json
--Dogs and Cats are displayed separately based on species
--Updating pet data requires re-uploading JSON from the desktop app
+- Dogs and Cats are displayed separately based on species
+- Updating pet data requires re-uploading JSON from the desktop app
+
 
 
