@@ -6,18 +6,18 @@
 
 <div class="showcase">
     <div class="pet-card">
-        <a href="/dogs/">
-            <img src="{% static 'shelter/dog.jpg' %}" alt="Dogs" width="150">
-        </a>
-        <p>Dogs</p>
-    </div>
+  <a href="{% url 'animals' %}?species=Dog">
+    <img src="{% static 'shelter/dog.jpg' %}" alt="Dogs">
+  </a>
+  <p>Dogs</p>
+</div>
 
-    <div class="pet-card">
-        <a href="/cats/">
-            <img src="{% static 'shelter/cat.jpg' %}" alt="Cats" width="150">
-        </a>
-        <p>Cats</p>
-    </div>
+<div class="pet-card">
+  <a href="{% url 'animals' %}?species=Cat">
+    <img src="{% static 'shelter/cat.jpg' %}" alt="Cats">
+  </a>
+  <p>Cats</p>
+</div>
 </div>
 
 <p>Adopt today and give a loving animal a forever home.</p>

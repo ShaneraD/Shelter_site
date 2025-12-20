@@ -1,0 +1,53 @@
+{
+  "total_pets": 4,
+  "pets": [
+    {
+      "pet_id": 1,
+      "name": "Indigo",
+      "species": "Cat",
+      "age": 3,
+      "breed": "Short hair",
+      "adoption_fee": 75.0,
+      "status": "Adopted",
+      "notes": "",
+      "photo_path": "",
+      "display_label": "#1 - Indigo (Cat)"
+    },
+    {
+      "pet_id": 2,
+      "name": "Chrome",
+      "species": "Dog",
+      "age": 4,
+      "breed": "Cane Corso",
+      "adoption_fee": 350.0,
+      "status": "Available",
+      "notes": "",
+      "photo_path": "",
+      "display_label": "#2 - Chrome (Dog)"
+    },
+    {
+      "pet_id": 3,
+      "name": "Chance",
+      "species": "Dog",
+      "age": 1,
+      "breed": "Boxer",
+      "adoption_fee": 200.0,
+      "status": "Available",
+      "notes": "",
+      "photo_path": "",
+      "display_label": "#3 - Chance (Dog)"
+    },
+    {
+      "pet_id": 4,
+      "name": "Binx",
+      "species": "Cat",
+      "age": 3,
+      "breed": "Tuxedo long hair",
+      "adoption_fee": 75.0,
+      "status": "Available",
+      "notes": "",
+      "photo_path": "",
+      "display_label": "#4 - Binx (Cat)"
+    }
+  ]
+}

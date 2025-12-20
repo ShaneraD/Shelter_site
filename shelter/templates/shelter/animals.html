@@ -1,0 +1,24 @@
+{% extends "shelter/base.html" %}
+
+{% block content %}
+<h2>Available Animals</h2>
+
+{% if pets %}
+  <div class="animal-list">
+    {% for pet in pets %}
+      {% if pet.status == "Available" %}
+        <div class="pet-card">
+          <h3>{{ pet.name }}</h3>
+          <p>Species: {{ pet.species }}</p>
+          <p>Breed: {{ pet.breed }}</p>
+          <p>Age: {{ pet.age }}</p>
+          <p>Adoption Fee: ${{ pet.adoption_fee }}</p>
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+{% else %}
+  <p>No animals available at this time.</p>
+{% endif %}
+
+{% endblock %}
